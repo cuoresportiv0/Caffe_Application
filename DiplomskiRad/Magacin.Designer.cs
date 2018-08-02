@@ -32,6 +32,14 @@ namespace DiplomskiRad
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Button unesiIzmene;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Panel panelNovi;
+		private System.Windows.Forms.Button dugmeUnos;
+		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.Label label4;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -78,9 +86,18 @@ namespace DiplomskiRad
 			this.label1 = new System.Windows.Forms.Label();
 			this.izborArtikla = new System.Windows.Forms.ComboBox();
 			this.dugmeNazad = new System.Windows.Forms.Button();
+			this.panelNovi = new System.Windows.Forms.Panel();
+			this.dugmeUnos = new System.Windows.Forms.Button();
+			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.panelpregled.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.panelazuriranje.SuspendLayout();
+			this.panelNovi.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pregled
@@ -120,6 +137,7 @@ namespace DiplomskiRad
 			this.button3.TabIndex = 2;
 			this.button3.Text = "Unos novog artikla";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.Button3Click);
 			// 
 			// panelpregled
 			// 
@@ -217,9 +235,9 @@ namespace DiplomskiRad
 			this.panelazuriranje.Controls.Add(this.label2);
 			this.panelazuriranje.Controls.Add(this.label1);
 			this.panelazuriranje.Controls.Add(this.izborArtikla);
-			this.panelazuriranje.Location = new System.Drawing.Point(201, 115);
+			this.panelazuriranje.Location = new System.Drawing.Point(147, 129);
 			this.panelazuriranje.Name = "panelazuriranje";
-			this.panelazuriranje.Size = new System.Drawing.Size(548, 438);
+			this.panelazuriranje.Size = new System.Drawing.Size(617, 482);
 			this.panelazuriranje.TabIndex = 4;
 			// 
 			// textBox2
@@ -296,13 +314,94 @@ namespace DiplomskiRad
 			// 
 			this.dugmeNazad.BackColor = System.Drawing.Color.FloralWhite;
 			this.dugmeNazad.ForeColor = System.Drawing.Color.Red;
-			this.dugmeNazad.Location = new System.Drawing.Point(746, 496);
+			this.dugmeNazad.Location = new System.Drawing.Point(815, 499);
 			this.dugmeNazad.Name = "dugmeNazad";
 			this.dugmeNazad.Size = new System.Drawing.Size(87, 48);
 			this.dugmeNazad.TabIndex = 5;
 			this.dugmeNazad.Text = "Nazad";
 			this.dugmeNazad.UseVisualStyleBackColor = false;
 			this.dugmeNazad.Click += new System.EventHandler(this.DugmeNazadClick);
+			// 
+			// panelNovi
+			// 
+			this.panelNovi.Controls.Add(this.dugmeUnos);
+			this.panelNovi.Controls.Add(this.textBox5);
+			this.panelNovi.Controls.Add(this.label6);
+			this.panelNovi.Controls.Add(this.textBox4);
+			this.panelNovi.Controls.Add(this.label5);
+			this.panelNovi.Controls.Add(this.textBox3);
+			this.panelNovi.Controls.Add(this.label4);
+			this.panelNovi.Location = new System.Drawing.Point(147, 129);
+			this.panelNovi.Name = "panelNovi";
+			this.panelNovi.Size = new System.Drawing.Size(617, 482);
+			this.panelNovi.TabIndex = 6;
+			// 
+			// dugmeUnos
+			// 
+			this.dugmeUnos.ForeColor = System.Drawing.Color.Peru;
+			this.dugmeUnos.Location = new System.Drawing.Point(455, 301);
+			this.dugmeUnos.Name = "dugmeUnos";
+			this.dugmeUnos.Size = new System.Drawing.Size(118, 35);
+			this.dugmeUnos.TabIndex = 6;
+			this.dugmeUnos.Text = "Unesite ";
+			this.dugmeUnos.UseVisualStyleBackColor = true;
+			this.dugmeUnos.Click += new System.EventHandler(this.DugmeUnosClick);
+			// 
+			// textBox5
+			// 
+			this.textBox5.ForeColor = System.Drawing.Color.Peru;
+			this.textBox5.Location = new System.Drawing.Point(25, 241);
+			this.textBox5.Name = "textBox5";
+			this.textBox5.Size = new System.Drawing.Size(235, 26);
+			this.textBox5.TabIndex = 5;
+			this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox5KeyPress);
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Peru;
+			this.label6.Location = new System.Drawing.Point(25, 197);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(321, 23);
+			this.label6.TabIndex = 4;
+			this.label6.Text = "Unesite broj komada na stanju:";
+			// 
+			// textBox4
+			// 
+			this.textBox4.ForeColor = System.Drawing.Color.Peru;
+			this.textBox4.Location = new System.Drawing.Point(25, 147);
+			this.textBox4.Name = "textBox4";
+			this.textBox4.Size = new System.Drawing.Size(235, 26);
+			this.textBox4.TabIndex = 3;
+			this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox4KeyPress);
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.Peru;
+			this.label5.Location = new System.Drawing.Point(25, 111);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(287, 23);
+			this.label5.TabIndex = 2;
+			this.label5.Text = "Unesite cenu novog artikla:";
+			// 
+			// textBox3
+			// 
+			this.textBox3.ForeColor = System.Drawing.Color.Peru;
+			this.textBox3.Location = new System.Drawing.Point(25, 52);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.Size = new System.Drawing.Size(235, 26);
+			this.textBox3.TabIndex = 1;
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.Peru;
+			this.label4.Location = new System.Drawing.Point(25, 18);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(287, 23);
+			this.label4.TabIndex = 0;
+			this.label4.Text = "Unesite naziv novog artikla:";
 			// 
 			// Magacin
 			// 
@@ -311,6 +410,7 @@ namespace DiplomskiRad
 			this.BackColor = System.Drawing.Color.White;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(914, 580);
+			this.Controls.Add(this.panelNovi);
 			this.Controls.Add(this.panelazuriranje);
 			this.Controls.Add(this.dugmeNazad);
 			this.Controls.Add(this.button3);
@@ -325,6 +425,8 @@ namespace DiplomskiRad
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.panelazuriranje.ResumeLayout(false);
 			this.panelazuriranje.PerformLayout();
+			this.panelNovi.ResumeLayout(false);
+			this.panelNovi.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
