@@ -19,7 +19,6 @@ namespace DiplomskiRad
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Panel panelpregled;
 		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.Button prikaz;
 		private System.Windows.Forms.DataGridViewTextBoxColumn artikl;
 		private System.Windows.Forms.DataGridViewTextBoxColumn cena;
 		private System.Windows.Forms.DataGridViewTextBoxColumn stanje;
@@ -72,7 +71,6 @@ namespace DiplomskiRad
 			this.azuriranje = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.panelpregled = new System.Windows.Forms.Panel();
-			this.prikaz = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.artikl = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -141,23 +139,11 @@ namespace DiplomskiRad
 			// 
 			// panelpregled
 			// 
-			this.panelpregled.Controls.Add(this.prikaz);
 			this.panelpregled.Controls.Add(this.dataGridView1);
 			this.panelpregled.Location = new System.Drawing.Point(147, 129);
 			this.panelpregled.Name = "panelpregled";
 			this.panelpregled.Size = new System.Drawing.Size(617, 482);
 			this.panelpregled.TabIndex = 3;
-			// 
-			// prikaz
-			// 
-			this.prikaz.ForeColor = System.Drawing.Color.Peru;
-			this.prikaz.Location = new System.Drawing.Point(4, 4);
-			this.prikaz.Name = "prikaz";
-			this.prikaz.Size = new System.Drawing.Size(151, 23);
-			this.prikaz.TabIndex = 1;
-			this.prikaz.Text = "Prikazi stanje";
-			this.prikaz.UseVisualStyleBackColor = true;
-			this.prikaz.Click += new System.EventHandler(this.PrikazClick);
 			// 
 			// dataGridView1
 			// 
@@ -186,10 +172,10 @@ namespace DiplomskiRad
 			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-			this.dataGridView1.Location = new System.Drawing.Point(4, 34);
+			this.dataGridView1.Location = new System.Drawing.Point(0, 0);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
-			this.dataGridView1.Size = new System.Drawing.Size(544, 384);
+			this.dataGridView1.Size = new System.Drawing.Size(617, 459);
 			this.dataGridView1.TabIndex = 2;
 			// 
 			// artikl
@@ -409,14 +395,14 @@ namespace DiplomskiRad
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(914, 580);
+			this.ClientSize = new System.Drawing.Size(984, 661);
+			this.Controls.Add(this.panelpregled);
 			this.Controls.Add(this.panelNovi);
 			this.Controls.Add(this.panelazuriranje);
 			this.Controls.Add(this.dugmeNazad);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.azuriranje);
 			this.Controls.Add(this.pregled);
-			this.Controls.Add(this.panelpregled);
 			this.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
 			this.Name = "Magacin";

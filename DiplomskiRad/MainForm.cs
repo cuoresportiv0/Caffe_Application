@@ -35,6 +35,11 @@ namespace DiplomskiRad{
 			Magacin magacin = new Magacin();
 			magacin.ShowDialog();
 		}
+		void LokaldugmeClick(object sender, EventArgs e)
+		{
+			Lokal lokal = new Lokal();
+			lokal.ShowDialog();
+		}
 	}
 
 }

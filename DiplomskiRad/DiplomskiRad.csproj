@@ -53,6 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lokal.cs" />
+    <Compile Include="Lokal.Designer.cs">
+      <DependentUpon>Lokal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Magacin.cs" />
     <Compile Include="Magacin.Designer.cs">
       <DependentUpon>Magacin.cs</DependentUpon>
@@ -69,6 +73,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Lokal.resx">
+      <DependentUpon>Lokal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Magacin.resx">
       <DependentUpon>Magacin.cs</DependentUpon>
     </EmbeddedResource>

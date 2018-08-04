@@ -34,7 +34,7 @@ namespace DiplomskiRad
 			konekcija = new SQLiteConnection("Data Source=baza.db;Version=3");
 			konekcija.Open();
 	}
-		void PrikazClick(object sender, EventArgs e)
+	/*	void PrikazClick(object sender, EventArgs e)
 		{
 
 			using (SQLiteCommand comm = new SQLiteCommand("Select * From artikli", konekcija)) {
@@ -51,13 +51,32 @@ namespace DiplomskiRad
 				}
 			}
 		
-}
+}*/
 		void PregledClick(object sender, EventArgs e)
-		{
+			
+		{	
+			dataGridView1.Rows.Clear();
+			dataGridView1.Refresh();
 			panelpregled.BringToFront();
+			
+			
+			using (SQLiteCommand comm = new SQLiteCommand("Select * From artikli", konekcija)) {
+				using (SQLiteDataReader read = comm.ExecuteReader()) {
+					while (read.Read()) {
+						dataGridView1.Rows.Add(new object[] {
+							read.GetValue(1),
+							// U can use column index
+							read.GetValue(2),
+							// Or column name like this
+							read.GetValue(3),
+						});
+					}
+				}
+		}
 		}
 		void AzuriranjeClick(object sender, EventArgs e)
 		{
+			izborArtikla.Items.Clear();
 			nazivArtikla();
 			panelazuriranje.BringToFront();
 			
@@ -68,7 +87,7 @@ namespace DiplomskiRad
 		}
 		
 		public void nazivArtikla(){
-
+			
 			using(SQLiteCommand komanda = konekcija.CreateCommand()){
 					komanda.CommandText = @"SELECT naziv From artikli";
 					SQLiteDataReader r = komanda.ExecuteReader();
@@ -101,28 +120,34 @@ namespace DiplomskiRad
 		void UnesiIzmeneClick(object sender, EventArgs e)
 		{
 			 string naziv=izborArtikla.Text;
-			 string broj=textBox1.Text;
-			 string cenaa=textBox2.Text;
-			 if(broj!=""){
-			 	int brojInt=int.Parse(broj);
+			 
+			 
+			 if(textBox1.Text!=""){
+			 	int brojInt=int.Parse(textBox1.Text);
 			 	
 			 	using(SQLiteCommand kkomanda = konekcija.CreateCommand()){
 				kkomanda.CommandText = @"UPDATE artikli SET broj_na_stanju = broj_na_stanju +'"+brojInt+"' WHERE naziv = '"+ naziv +"'";
-				SQLiteDataReader r = kkomanda.ExecuteReader();
+				SQLiteDataReader r= kkomanda.ExecuteReader();
 			 		}
 			 	
 			 
 			 }
-			 	if(cenaa!=""){
-			 		int cenaInt=int.Parse(cenaa);
+			 	if(textBox2.Text!=""){
+			 		int cenaInt=int.Parse(textBox2.Text);
 			 	
 			 		using(SQLiteCommand kom= konekcija.CreateCommand()){
 			 		kom.CommandText=@"Update artikli SET cena='"+cenaInt+"'WHERE naziv = '"+ naziv +"'";
-			 		SQLiteDataReader r = kom.ExecuteReader();
+			 		SQLiteDataReader rr=kom.ExecuteReader();
 			 			
 			 		}
 			 		
 			 	}
+			 MessageBox.Show("Uspesno izvrsena izmena!" ,"", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			 textBox1.Clear();
+			 textBox2.Clear();
+			 izborArtikla.ResetText();
+						 
+			 
 			 
 		}
 		void Button3Click(object sender, EventArgs e)
@@ -158,14 +183,19 @@ namespace DiplomskiRad
 				using(SQLiteCommand izvrsi= konekcija.CreateCommand()){
 			 		izvrsi.CommandText=@"INSERT INTO artikli(naziv,cena,broj_na_stanju) values('"+imeArtikla+"',"+cenaNovogArtikla+","+brojNovihArtikala+")";
 			 		izvrsi.ExecuteNonQuery();
-				
+			 		MessageBox.Show("Unosenje obavljeno uspesno!","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+			 		textBox3.Clear();
+			 		textBox4.Clear();
+			 		textBox5.Clear();
 			 		}
 			 		
 		}
 			else{
 				MessageBox.Show("Morate uneti podatke za cenu i broj artikala!","",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
+			
 		}
+	
 	
 		
 	}
