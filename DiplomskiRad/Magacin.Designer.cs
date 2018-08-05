@@ -298,11 +298,12 @@ namespace DiplomskiRad
 			// 
 			// dugmeNazad
 			// 
-			this.dugmeNazad.BackColor = System.Drawing.Color.FloralWhite;
+			this.dugmeNazad.BackColor = System.Drawing.Color.White;
+			this.dugmeNazad.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.dugmeNazad.ForeColor = System.Drawing.Color.Red;
-			this.dugmeNazad.Location = new System.Drawing.Point(815, 499);
+			this.dugmeNazad.Location = new System.Drawing.Point(904, 12);
 			this.dugmeNazad.Name = "dugmeNazad";
-			this.dugmeNazad.Size = new System.Drawing.Size(87, 48);
+			this.dugmeNazad.Size = new System.Drawing.Size(68, 35);
 			this.dugmeNazad.TabIndex = 5;
 			this.dugmeNazad.Text = "Nazad";
 			this.dugmeNazad.UseVisualStyleBackColor = false;
