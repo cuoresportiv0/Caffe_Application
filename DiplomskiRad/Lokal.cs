@@ -77,6 +77,50 @@ namespace DiplomskiRad
 		{
 			this.Close();
 		}
+		void StoPrviClick(object sender, EventArgs e)
+		{
+			Sto sto1=new Sto();
+			sto1.ShowDialog();
+		}
+		void StoDrugiClick(object sender, EventArgs e)
+		{
+			Sto sto2=new Sto();
+			sto2.ShowDialog();
+		}
+		void StoTreciClick(object sender, EventArgs e)
+		{
+			Sto sto3=new Sto();
+			sto3.ShowDialog();
+		}
+		void StoCetvrtiClick(object sender, EventArgs e)
+		{
+			Sto sto4=new Sto();
+			sto4.ShowDialog();
+	
+		}
+		void StoPetiClick(object sender, EventArgs e)
+		{
+			Sto sto5=new Sto();
+			sto5.ShowDialog();
+		}
+		void StoSestiClick(object sender, EventArgs e)
+		{
+			Sto sto6=new Sto();
+			sto6.ShowDialog();
+	
+		}
+		void StoSedmiClick(object sender, EventArgs e)
+		{
+			Sto sto7=new Sto();
+			sto7.ShowDialog();
+	
+		}
+		void StoOsmiClick(object sender, EventArgs e)
+		{
+			Sto sto8=new Sto();
+			sto8.ShowDialog();
+		}
+		
 
 	}
 }

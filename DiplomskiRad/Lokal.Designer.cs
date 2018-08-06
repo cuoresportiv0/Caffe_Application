@@ -103,6 +103,7 @@ namespace DiplomskiRad
 			this.stoPrvi.TabIndex = 3;
 			this.stoPrvi.Text = "Sto 1";
 			this.stoPrvi.UseVisualStyleBackColor = true;
+			this.stoPrvi.Click += new System.EventHandler(this.StoPrviClick);
 			// 
 			// stoCetvrti
 			// 
@@ -114,6 +115,7 @@ namespace DiplomskiRad
 			this.stoCetvrti.TabIndex = 4;
 			this.stoCetvrti.Text = "Sto 4";
 			this.stoCetvrti.UseVisualStyleBackColor = true;
+			this.stoCetvrti.Click += new System.EventHandler(this.StoCetvrtiClick);
 			// 
 			// stoSesti
 			// 
@@ -125,6 +127,7 @@ namespace DiplomskiRad
 			this.stoSesti.TabIndex = 5;
 			this.stoSesti.Text = "Sto 6";
 			this.stoSesti.UseVisualStyleBackColor = true;
+			this.stoSesti.Click += new System.EventHandler(this.StoSestiClick);
 			// 
 			// stoDrugi
 			// 
@@ -136,6 +139,7 @@ namespace DiplomskiRad
 			this.stoDrugi.TabIndex = 6;
 			this.stoDrugi.Text = "Sto 2";
 			this.stoDrugi.UseVisualStyleBackColor = true;
+			this.stoDrugi.Click += new System.EventHandler(this.StoDrugiClick);
 			// 
 			// stoSedmi
 			// 
@@ -147,6 +151,7 @@ namespace DiplomskiRad
 			this.stoSedmi.TabIndex = 7;
 			this.stoSedmi.Text = "Sto 7";
 			this.stoSedmi.UseVisualStyleBackColor = true;
+			this.stoSedmi.Click += new System.EventHandler(this.StoSedmiClick);
 			// 
 			// stoPeti
 			// 
@@ -158,6 +163,7 @@ namespace DiplomskiRad
 			this.stoPeti.TabIndex = 8;
 			this.stoPeti.Text = "Sto 5";
 			this.stoPeti.UseVisualStyleBackColor = true;
+			this.stoPeti.Click += new System.EventHandler(this.StoPetiClick);
 			// 
 			// stoTreci
 			// 
@@ -169,6 +175,7 @@ namespace DiplomskiRad
 			this.stoTreci.TabIndex = 9;
 			this.stoTreci.Text = "Sto 3";
 			this.stoTreci.UseVisualStyleBackColor = true;
+			this.stoTreci.Click += new System.EventHandler(this.StoTreciClick);
 			// 
 			// stoOsmi
 			// 
@@ -180,6 +187,7 @@ namespace DiplomskiRad
 			this.stoOsmi.TabIndex = 10;
 			this.stoOsmi.Text = "Sto 8";
 			this.stoOsmi.UseVisualStyleBackColor = true;
+			this.stoOsmi.Click += new System.EventHandler(this.StoOsmiClick);
 			// 
 			// dugmeNazad
 			// 
