@@ -65,11 +65,12 @@ namespace DiplomskiRad
 			// 
 			// labelRadnik
 			// 
-			this.labelRadnik.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.labelRadnik.BackColor = System.Drawing.Color.White;
+			this.labelRadnik.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelRadnik.ForeColor = System.Drawing.Color.DarkOrange;
 			this.labelRadnik.Location = new System.Drawing.Point(48, 24);
 			this.labelRadnik.Name = "labelRadnik";
-			this.labelRadnik.Size = new System.Drawing.Size(142, 23);
+			this.labelRadnik.Size = new System.Drawing.Size(107, 27);
 			this.labelRadnik.TabIndex = 0;
 			this.labelRadnik.Text = "Radnik:";
 			// 
@@ -85,108 +86,117 @@ namespace DiplomskiRad
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-			this.label1.Location = new System.Drawing.Point(446, 24);
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("Elephant", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.White;
+			this.label1.Location = new System.Drawing.Point(386, 12);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(170, 48);
+			this.label1.Size = new System.Drawing.Size(291, 53);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "00:00:00";
 			// 
 			// stoPrvi
 			// 
-			this.stoPrvi.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoPrvi.BackColor = System.Drawing.Color.White;
+			this.stoPrvi.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.stoPrvi.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoPrvi.Location = new System.Drawing.Point(147, 158);
 			this.stoPrvi.Name = "stoPrvi";
-			this.stoPrvi.Size = new System.Drawing.Size(112, 84);
+			this.stoPrvi.Size = new System.Drawing.Size(130, 100);
 			this.stoPrvi.TabIndex = 3;
 			this.stoPrvi.Text = "Sto 1";
-			this.stoPrvi.UseVisualStyleBackColor = true;
+			this.stoPrvi.UseVisualStyleBackColor = false;
 			this.stoPrvi.Click += new System.EventHandler(this.StoPrviClick);
 			// 
 			// stoCetvrti
 			// 
-			this.stoCetvrti.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoCetvrti.BackColor = System.Drawing.Color.White;
+			this.stoCetvrti.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoCetvrti.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoCetvrti.Location = new System.Drawing.Point(330, 304);
 			this.stoCetvrti.Name = "stoCetvrti";
-			this.stoCetvrti.Size = new System.Drawing.Size(112, 84);
+			this.stoCetvrti.Size = new System.Drawing.Size(130, 100);
 			this.stoCetvrti.TabIndex = 4;
 			this.stoCetvrti.Text = "Sto 4";
-			this.stoCetvrti.UseVisualStyleBackColor = true;
+			this.stoCetvrti.UseVisualStyleBackColor = false;
 			this.stoCetvrti.Click += new System.EventHandler(this.StoCetvrtiClick);
 			// 
 			// stoSesti
 			// 
-			this.stoSesti.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoSesti.BackColor = System.Drawing.Color.White;
+			this.stoSesti.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoSesti.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoSesti.Location = new System.Drawing.Point(147, 478);
 			this.stoSesti.Name = "stoSesti";
-			this.stoSesti.Size = new System.Drawing.Size(112, 84);
+			this.stoSesti.Size = new System.Drawing.Size(130, 100);
 			this.stoSesti.TabIndex = 5;
 			this.stoSesti.Text = "Sto 6";
-			this.stoSesti.UseVisualStyleBackColor = true;
+			this.stoSesti.UseVisualStyleBackColor = false;
 			this.stoSesti.Click += new System.EventHandler(this.StoSestiClick);
 			// 
 			// stoDrugi
 			// 
-			this.stoDrugi.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoDrugi.BackColor = System.Drawing.Color.White;
+			this.stoDrugi.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.stoDrugi.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoDrugi.Location = new System.Drawing.Point(455, 158);
 			this.stoDrugi.Name = "stoDrugi";
-			this.stoDrugi.Size = new System.Drawing.Size(112, 84);
+			this.stoDrugi.Size = new System.Drawing.Size(130, 100);
 			this.stoDrugi.TabIndex = 6;
 			this.stoDrugi.Text = "Sto 2";
-			this.stoDrugi.UseVisualStyleBackColor = true;
+			this.stoDrugi.UseVisualStyleBackColor = false;
 			this.stoDrugi.Click += new System.EventHandler(this.StoDrugiClick);
 			// 
 			// stoSedmi
 			// 
-			this.stoSedmi.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoSedmi.BackColor = System.Drawing.Color.White;
+			this.stoSedmi.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoSedmi.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoSedmi.Location = new System.Drawing.Point(455, 478);
 			this.stoSedmi.Name = "stoSedmi";
-			this.stoSedmi.Size = new System.Drawing.Size(112, 84);
+			this.stoSedmi.Size = new System.Drawing.Size(130, 100);
 			this.stoSedmi.TabIndex = 7;
 			this.stoSedmi.Text = "Sto 7";
-			this.stoSedmi.UseVisualStyleBackColor = true;
+			this.stoSedmi.UseVisualStyleBackColor = false;
 			this.stoSedmi.Click += new System.EventHandler(this.StoSedmiClick);
 			// 
 			// stoPeti
 			// 
-			this.stoPeti.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoPeti.BackColor = System.Drawing.Color.White;
+			this.stoPeti.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoPeti.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoPeti.Location = new System.Drawing.Point(576, 304);
 			this.stoPeti.Name = "stoPeti";
-			this.stoPeti.Size = new System.Drawing.Size(112, 84);
+			this.stoPeti.Size = new System.Drawing.Size(130, 100);
 			this.stoPeti.TabIndex = 8;
 			this.stoPeti.Text = "Sto 5";
-			this.stoPeti.UseVisualStyleBackColor = true;
+			this.stoPeti.UseVisualStyleBackColor = false;
 			this.stoPeti.Click += new System.EventHandler(this.StoPetiClick);
 			// 
 			// stoTreci
 			// 
-			this.stoTreci.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoTreci.BackColor = System.Drawing.Color.White;
+			this.stoTreci.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoTreci.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoTreci.Location = new System.Drawing.Point(745, 158);
 			this.stoTreci.Name = "stoTreci";
-			this.stoTreci.Size = new System.Drawing.Size(112, 84);
+			this.stoTreci.Size = new System.Drawing.Size(130, 100);
 			this.stoTreci.TabIndex = 9;
 			this.stoTreci.Text = "Sto 3";
-			this.stoTreci.UseVisualStyleBackColor = true;
+			this.stoTreci.UseVisualStyleBackColor = false;
 			this.stoTreci.Click += new System.EventHandler(this.StoTreciClick);
 			// 
 			// stoOsmi
 			// 
-			this.stoOsmi.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.stoOsmi.BackColor = System.Drawing.Color.White;
+			this.stoOsmi.Font = new System.Drawing.Font("Elephant", 24F);
 			this.stoOsmi.ForeColor = System.Drawing.Color.DarkOrange;
 			this.stoOsmi.Location = new System.Drawing.Point(745, 478);
 			this.stoOsmi.Name = "stoOsmi";
-			this.stoOsmi.Size = new System.Drawing.Size(112, 84);
+			this.stoOsmi.Size = new System.Drawing.Size(130, 100);
 			this.stoOsmi.TabIndex = 10;
 			this.stoOsmi.Text = "Sto 8";
-			this.stoOsmi.UseVisualStyleBackColor = true;
+			this.stoOsmi.UseVisualStyleBackColor = false;
 			this.stoOsmi.Click += new System.EventHandler(this.StoOsmiClick);
 			// 
 			// dugmeNazad
@@ -205,7 +215,7 @@ namespace DiplomskiRad
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Lavender;
+			this.BackColor = System.Drawing.Color.DimGray;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(984, 661);
 			this.Controls.Add(this.dugmeNazad);

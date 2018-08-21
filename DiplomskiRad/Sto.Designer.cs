@@ -55,13 +55,13 @@ namespace DiplomskiRad
 			// 
 			// labelSto
 			// 
-			this.labelSto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.labelSto.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.labelSto.ForeColor = System.Drawing.Color.DarkOrange;
 			this.labelSto.Location = new System.Drawing.Point(34, 28);
 			this.labelSto.Name = "labelSto";
-			this.labelSto.Size = new System.Drawing.Size(167, 27);
+			this.labelSto.Size = new System.Drawing.Size(188, 27);
 			this.labelSto.TabIndex = 0;
-			this.labelSto.Text = "Poruceno pice:";
+			this.labelSto.Text = "Odaberite artikal:";
 			// 
 			// spisakPica
 			// 
@@ -75,25 +75,25 @@ namespace DiplomskiRad
 			// 
 			// dugmeIsporuci
 			// 
-			this.dugmeIsporuci.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.dugmeIsporuci.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.dugmeIsporuci.ForeColor = System.Drawing.Color.DarkOrange;
-			this.dugmeIsporuci.Location = new System.Drawing.Point(62, 141);
+			this.dugmeIsporuci.Location = new System.Drawing.Point(71, 143);
 			this.dugmeIsporuci.Name = "dugmeIsporuci";
-			this.dugmeIsporuci.Size = new System.Drawing.Size(97, 28);
+			this.dugmeIsporuci.Size = new System.Drawing.Size(110, 39);
 			this.dugmeIsporuci.TabIndex = 2;
-			this.dugmeIsporuci.Text = "Isporuci";
+			this.dugmeIsporuci.Text = "Isporuka";
 			this.dugmeIsporuci.UseVisualStyleBackColor = true;
 			this.dugmeIsporuci.Click += new System.EventHandler(this.DugmeIsporuciClick);
 			// 
 			// labelZaduzenje
 			// 
-			this.labelZaduzenje.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.labelZaduzenje.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.labelZaduzenje.ForeColor = System.Drawing.Color.DarkOrange;
 			this.labelZaduzenje.Location = new System.Drawing.Point(626, 29);
 			this.labelZaduzenje.Name = "labelZaduzenje";
 			this.labelZaduzenje.Size = new System.Drawing.Size(178, 26);
 			this.labelZaduzenje.TabIndex = 3;
-			this.labelZaduzenje.Text = "Zaduzenje stola:";
+			this.labelZaduzenje.Text = "Dugovanje stola:";
 			// 
 			// Racun
 			// 
@@ -108,7 +108,7 @@ namespace DiplomskiRad
 			// 
 			// kreirajRacun
 			// 
-			this.kreirajRacun.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.kreirajRacun.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold);
 			this.kreirajRacun.ForeColor = System.Drawing.Color.DarkOrange;
 			this.kreirajRacun.Location = new System.Drawing.Point(660, 307);
 			this.kreirajRacun.Name = "kreirajRacun";

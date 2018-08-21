@@ -45,9 +45,9 @@ namespace DiplomskiRad
 			// 
 			// lokaldugme
 			// 
-			this.lokaldugme.BackColor = System.Drawing.Color.FloralWhite;
+			this.lokaldugme.BackColor = System.Drawing.Color.White;
 			this.lokaldugme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.lokaldugme.Font = new System.Drawing.Font("Stencil Std", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lokaldugme.Font = new System.Drawing.Font("Elephant", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lokaldugme.ForeColor = System.Drawing.Color.Peru;
 			this.lokaldugme.Location = new System.Drawing.Point(283, 102);
 			this.lokaldugme.Name = "lokaldugme";
@@ -59,9 +59,9 @@ namespace DiplomskiRad
 			// 
 			// magacindugme
 			// 
-			this.magacindugme.BackColor = System.Drawing.Color.FloralWhite;
+			this.magacindugme.BackColor = System.Drawing.Color.White;
 			this.magacindugme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.magacindugme.Font = new System.Drawing.Font("Stencil Std", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.magacindugme.Font = new System.Drawing.Font("Elephant", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.magacindugme.ForeColor = System.Drawing.Color.Peru;
 			this.magacindugme.Location = new System.Drawing.Point(283, 215);
 			this.magacindugme.Name = "magacindugme";

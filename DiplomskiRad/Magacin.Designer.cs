@@ -100,7 +100,8 @@ namespace DiplomskiRad
 			// 
 			// pregled
 			// 
-			this.pregled.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.pregled.BackColor = System.Drawing.Color.White;
+			this.pregled.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.pregled.ForeColor = System.Drawing.Color.Peru;
 			this.pregled.Location = new System.Drawing.Point(40, 49);
 			this.pregled.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -108,12 +109,13 @@ namespace DiplomskiRad
 			this.pregled.Size = new System.Drawing.Size(155, 57);
 			this.pregled.TabIndex = 0;
 			this.pregled.Text = "Pregled ";
-			this.pregled.UseVisualStyleBackColor = true;
+			this.pregled.UseVisualStyleBackColor = false;
 			this.pregled.Click += new System.EventHandler(this.PregledClick);
 			// 
 			// azuriranje
 			// 
-			this.azuriranje.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.azuriranje.BackColor = System.Drawing.Color.White;
+			this.azuriranje.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.azuriranje.ForeColor = System.Drawing.Color.Peru;
 			this.azuriranje.Location = new System.Drawing.Point(345, 51);
 			this.azuriranje.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -121,24 +123,26 @@ namespace DiplomskiRad
 			this.azuriranje.Size = new System.Drawing.Size(159, 57);
 			this.azuriranje.TabIndex = 1;
 			this.azuriranje.Text = "Azuriranje";
-			this.azuriranje.UseVisualStyleBackColor = true;
+			this.azuriranje.UseVisualStyleBackColor = false;
 			this.azuriranje.Click += new System.EventHandler(this.AzuriranjeClick);
 			// 
 			// button3
 			// 
-			this.button3.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.BackColor = System.Drawing.Color.White;
+			this.button3.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button3.ForeColor = System.Drawing.Color.Peru;
-			this.button3.Location = new System.Drawing.Point(651, 51);
+			this.button3.Location = new System.Drawing.Point(654, 49);
 			this.button3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(163, 55);
+			this.button3.Size = new System.Drawing.Size(180, 59);
 			this.button3.TabIndex = 2;
 			this.button3.Text = "Unos novog artikla";
-			this.button3.UseVisualStyleBackColor = true;
+			this.button3.UseVisualStyleBackColor = false;
 			this.button3.Click += new System.EventHandler(this.Button3Click);
 			// 
 			// panelpregled
 			// 
+			this.panelpregled.BackColor = System.Drawing.Color.Transparent;
 			this.panelpregled.Controls.Add(this.dataGridView1);
 			this.panelpregled.Location = new System.Drawing.Point(147, 129);
 			this.panelpregled.Name = "panelpregled";
@@ -153,7 +157,7 @@ namespace DiplomskiRad
 			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Peru;
 			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -166,16 +170,16 @@ namespace DiplomskiRad
 			this.stanje});
 			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Peru;
 			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-			this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+			this.dataGridView1.Location = new System.Drawing.Point(61, 0);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
-			this.dataGridView1.Size = new System.Drawing.Size(617, 459);
+			this.dataGridView1.Size = new System.Drawing.Size(543, 459);
 			this.dataGridView1.TabIndex = 2;
 			// 
 			// artikl
@@ -210,10 +214,11 @@ namespace DiplomskiRad
 			this.stanje.HeaderText = "Broj na stanju";
 			this.stanje.Name = "stanje";
 			this.stanje.ReadOnly = true;
-			this.stanje.Width = 150;
+			this.stanje.Width = 140;
 			// 
 			// panelazuriranje
 			// 
+			this.panelazuriranje.BackColor = System.Drawing.Color.White;
 			this.panelazuriranje.Controls.Add(this.textBox2);
 			this.panelazuriranje.Controls.Add(this.label3);
 			this.panelazuriranje.Controls.Add(this.textBox1);
@@ -311,6 +316,7 @@ namespace DiplomskiRad
 			// 
 			// panelNovi
 			// 
+			this.panelNovi.BackColor = System.Drawing.Color.White;
 			this.panelNovi.Controls.Add(this.dugmeUnos);
 			this.panelNovi.Controls.Add(this.textBox5);
 			this.panelNovi.Controls.Add(this.label6);
@@ -394,7 +400,7 @@ namespace DiplomskiRad
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.White;
+			this.BackColor = System.Drawing.Color.Gold;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(984, 661);
 			this.Controls.Add(this.panelpregled);
