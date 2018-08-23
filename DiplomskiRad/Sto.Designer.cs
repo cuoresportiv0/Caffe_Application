@@ -21,6 +21,8 @@ namespace DiplomskiRad
 		private System.Windows.Forms.ListBox Racun;
 		private System.Windows.Forms.Button kreirajRacun;
 		private System.Windows.Forms.Button dugmeNazad;
+		private System.Windows.Forms.PrintDialog printDialog1;
+		private System.Drawing.Printing.PrintDocument printDocument1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -51,6 +53,8 @@ namespace DiplomskiRad
 			this.Racun = new System.Windows.Forms.ListBox();
 			this.kreirajRacun = new System.Windows.Forms.Button();
 			this.dugmeNazad = new System.Windows.Forms.Button();
+			this.printDialog1 = new System.Windows.Forms.PrintDialog();
+			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
 			this.SuspendLayout();
 			// 
 			// labelSto
@@ -98,7 +102,7 @@ namespace DiplomskiRad
 			// Racun
 			// 
 			this.Racun.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.Racun.ForeColor = System.Drawing.Color.DarkOrange;
+			this.Racun.ForeColor = System.Drawing.Color.Black;
 			this.Racun.FormattingEnabled = true;
 			this.Racun.ItemHeight = 16;
 			this.Racun.Location = new System.Drawing.Point(582, 71);
@@ -110,11 +114,11 @@ namespace DiplomskiRad
 			// 
 			this.kreirajRacun.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold);
 			this.kreirajRacun.ForeColor = System.Drawing.Color.DarkOrange;
-			this.kreirajRacun.Location = new System.Drawing.Point(660, 307);
+			this.kreirajRacun.Location = new System.Drawing.Point(620, 304);
 			this.kreirajRacun.Name = "kreirajRacun";
-			this.kreirajRacun.Size = new System.Drawing.Size(114, 33);
+			this.kreirajRacun.Size = new System.Drawing.Size(184, 33);
 			this.kreirajRacun.TabIndex = 5;
-			this.kreirajRacun.Text = "Racun";
+			this.kreirajRacun.Text = "Ispostavi Racun";
 			this.kreirajRacun.UseVisualStyleBackColor = true;
 			this.kreirajRacun.Click += new System.EventHandler(this.KreirajRacunClick);
 			// 
@@ -130,6 +134,15 @@ namespace DiplomskiRad
 			this.dugmeNazad.Text = "Nazad";
 			this.dugmeNazad.UseVisualStyleBackColor = false;
 			this.dugmeNazad.Click += new System.EventHandler(this.DugmeNazadClick);
+			// 
+			// printDialog1
+			// 
+			this.printDialog1.UseEXDialog = true;
+			//
+  			// printDocument1
+  			// 
+  			this.printDocument1.PrintPage += new System.Drawing.Printing.
+	      	PrintPageEventHandler(this.printDocument1_PrintPage);
 			// 
 			// Sto
 			// 

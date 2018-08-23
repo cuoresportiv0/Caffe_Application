@@ -10,6 +10,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.IO;
+
 
 namespace DiplomskiRad
 {
@@ -20,6 +22,8 @@ namespace DiplomskiRad
 	{
 		public SQLiteConnection konekcija;
 		public int total=0;
+		public string vreme;
+		private StringReader myReader;
 		
 		public Sto()
 		{
@@ -27,6 +31,48 @@ namespace DiplomskiRad
 			InitializeComponent();
 			setKonekcija();
 			ucitajDostupnaPica();
+			Racun.Items.Add("        "+DateTime.Now);
+			Racun.Items.Add(System.Environment.NewLine);
+			
+		}
+		
+		protected void printDocument1_PrintPage(object sender,
+          System.Drawing.Printing.PrintPageEventArgs ev)
+			 {
+			float linesPerPage = 0;
+			float yPosition = 0;
+			int count = 0;
+			float leftMargin = ev.MarginBounds.Left;
+			float topMargin = ev.MarginBounds.Top;
+			string line = null;
+			Font printFont = this.Racun.Font;
+			
+			SolidBrush myBrush = new SolidBrush(Color.Black);
+			//Racunanje linija po strani koriscenjem MarginBounds-a
+			linesPerPage =ev.MarginBounds.Height / printFont.GetHeight(ev.Graphics);
+			
+			
+			//Iteracija kroz string koriscenjem StringReader-a i ispisivanje svake linije
+			while (count < linesPerPage && ((line = myReader.ReadLine()) != null)){
+				//Racunanje pozicije sledece linije na osnovu sirine odgovarajuceg fonta
+				yPosition = topMargin + (count * printFont.GetHeight(ev.Graphics));
+				//crtanje sledece linije
+				ev.Graphics.DrawString(line, printFont,
+			                       myBrush, leftMargin,
+			                       yPosition, new StringFormat());
+				count++;
+			}
+			
+			//ako ima vise linija ispisi ih na sledecoj strani
+			if (line != null)
+				ev.HasMorePages = true;
+			else
+				ev.HasMorePages = false;
+		
+			myBrush.Dispose();
+		
+		
+		
 		}
 		
 		void setKonekcija(){
@@ -82,9 +128,44 @@ namespace DiplomskiRad
 			}
 		}
 		void KreirajRacunClick(object sender, EventArgs e)
-		{
-			MessageBox.Show("Ukupno zaduzenje stola " +
-			                "iznosi : "+total+" dinara","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+			
+		{	Racun.Items.Add(System.Environment.NewLine);
+			Racun.Items.Add("Ukupno zaduzenje: "+total+".00 dinara");
+			
+			int dan=DateTime.Today.Day;
+			int mesec=DateTime.Today.Month;
+			int godina=DateTime.Today.Year;
+		
+			vreme=DateTime.Now.ToShortTimeString();
+			
+			using(SQLiteCommand izvrsi= konekcija.CreateCommand()){
+				izvrsi.CommandText=@"INSERT INTO racuni(vreme,dan,mesec,godina,total) values('"+vreme+"',"+dan+","+mesec+","+godina+","+total+")";
+			 		izvrsi.ExecuteNonQuery();}
+			
+			//MessageBox.Show("Ukupno zaduzenje stola " +
+			//                "iznosi : "+total+" dinara","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+			
+			printDialog1.Document = printDocument1;
+			string strText = "";
+			foreach (object x in Racun.Items){
+				
+				strText = strText + x + "\n";
+			}
+			
+			myReader = new StringReader(strText);
+			if (printDialog1.ShowDialog() == DialogResult.OK){
+				
+				this.printDocument1.Print();
+			}
+			
+			
+			
+			
+			
+				
+				
+				
+				
 			total=0;
 			Racun.Items.Clear();
 		}
