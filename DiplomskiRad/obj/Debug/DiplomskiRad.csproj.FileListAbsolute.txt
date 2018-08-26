@@ -1,6 +1,4 @@
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.csprojResolveAssemblyReference.cache
-C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.MainForm.resources
-C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.csproj.GenerateResource.Cache
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\bin\Debug\DiplomskiRad.exe.config
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\bin\Debug\DiplomskiRad.exe
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\bin\Debug\DiplomskiRad.pdb
@@ -8,7 +6,9 @@ C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\bin\Deb
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\bin\Debug\System.Data.SQLite.xml
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.exe
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.pdb
-C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Magacin.resources
-C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Lokal.resources
-C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Sto.resources
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Izvestaj.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Lokal.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Magacin.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.MainForm.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Sto.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.csproj.GenerateResource.Cache

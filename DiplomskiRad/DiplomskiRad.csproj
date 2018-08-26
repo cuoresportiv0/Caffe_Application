@@ -81,7 +81,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Izvestaj.resx">
+    <EmbeddedResource Include="Izvestaji.resx">
       <DependentUpon>Izvestaji.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lokal.resx">

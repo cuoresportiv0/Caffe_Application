@@ -132,7 +132,9 @@ namespace DiplomskiRad
 		}
 		void KreirajRacunClick(object sender, EventArgs e)
 			
-		{	Racun.Items.Add(System.Environment.NewLine);
+		{	
+			if(total>0){
+			Racun.Items.Add(System.Environment.NewLine);
 			Racun.Items.Add("Ukupno zaduzenje: "+total+".00 dinara");
 			
 			int dan=DateTime.Today.Day;
@@ -140,7 +142,7 @@ namespace DiplomskiRad
 			int godina=DateTime.Today.Year;
 		
 			vreme=DateTime.Now.ToShortTimeString();
-			//loop kroz listu i dodajes jedan po jedan(vreme,dan,mesec,godina,id)
+			
 			using(SQLiteCommand izvrsi= konekcija.CreateCommand()){
 				izvrsi.CommandText=@"INSERT INTO racuni(vreme,dan,mesec,godina,total) values('"+vreme+"',"+dan+","+mesec+","+godina+","+total+")";
 			 		izvrsi.ExecuteNonQuery();}
@@ -173,6 +175,11 @@ namespace DiplomskiRad
 			Racun.Items.Clear();
 			Racun.Items.Add("        "+DateTime.Now);
 			Racun.Items.Add(System.Environment.NewLine);
+			}
+			
+			else{
+				MessageBox.Show("Da bi ste ispostavili racun mora postojati zaduzenje!","",MessageBoxButtons.OK,MessageBoxIcon.Error);
+			}
 			
 		}
 		void DugmeNazadClick(object sender, EventArgs e)

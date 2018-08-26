@@ -29,6 +29,7 @@ namespace DiplomskiRad
 		private System.Windows.Forms.ListBox prihodMesec;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ListBox prihodDan;
+		private System.Windows.Forms.Button dugmeNazad;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -68,6 +69,7 @@ namespace DiplomskiRad
 			this.prihodMesec = new System.Windows.Forms.ListBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.prihodDan = new System.Windows.Forms.ListBox();
+			this.dugmeNazad = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -116,7 +118,7 @@ namespace DiplomskiRad
 			this.ukupnaVrednost});
 			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkOrange;
 			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -156,7 +158,7 @@ namespace DiplomskiRad
 			// 
 			this.label2.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-			this.label2.Location = new System.Drawing.Point(555, 23);
+			this.label2.Location = new System.Drawing.Point(39, 84);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(178, 31);
 			this.label2.TabIndex = 3;
@@ -167,7 +169,7 @@ namespace DiplomskiRad
 			this.odabirDana.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.odabirDana.ForeColor = System.Drawing.Color.Black;
 			this.odabirDana.FormattingEnabled = true;
-			this.odabirDana.Location = new System.Drawing.Point(781, 23);
+			this.odabirDana.Location = new System.Drawing.Point(273, 84);
 			this.odabirDana.Name = "odabirDana";
 			this.odabirDana.Size = new System.Drawing.Size(63, 24);
 			this.odabirDana.TabIndex = 4;
@@ -177,7 +179,7 @@ namespace DiplomskiRad
 			// 
 			this.label3.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-			this.label3.Location = new System.Drawing.Point(39, 77);
+			this.label3.Location = new System.Drawing.Point(399, 16);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(322, 31);
 			this.label3.TabIndex = 5;
@@ -188,7 +190,7 @@ namespace DiplomskiRad
 			this.prihodMesec.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.prihodMesec.FormattingEnabled = true;
 			this.prihodMesec.ItemHeight = 20;
-			this.prihodMesec.Location = new System.Drawing.Point(385, 64);
+			this.prihodMesec.Location = new System.Drawing.Point(749, 13);
 			this.prihodMesec.Name = "prihodMesec";
 			this.prihodMesec.Size = new System.Drawing.Size(120, 44);
 			this.prihodMesec.TabIndex = 6;
@@ -197,7 +199,7 @@ namespace DiplomskiRad
 			// 
 			this.label4.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-			this.label4.Location = new System.Drawing.Point(39, 134);
+			this.label4.Location = new System.Drawing.Point(399, 77);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(322, 31);
 			this.label4.TabIndex = 7;
@@ -208,10 +210,23 @@ namespace DiplomskiRad
 			this.prihodDan.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.prihodDan.FormattingEnabled = true;
 			this.prihodDan.ItemHeight = 20;
-			this.prihodDan.Location = new System.Drawing.Point(385, 121);
+			this.prihodDan.Location = new System.Drawing.Point(749, 64);
 			this.prihodDan.Name = "prihodDan";
 			this.prihodDan.Size = new System.Drawing.Size(120, 44);
 			this.prihodDan.TabIndex = 8;
+			// 
+			// dugmeNazad
+			// 
+			this.dugmeNazad.BackColor = System.Drawing.Color.White;
+			this.dugmeNazad.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.dugmeNazad.ForeColor = System.Drawing.Color.Red;
+			this.dugmeNazad.Location = new System.Drawing.Point(889, 600);
+			this.dugmeNazad.Name = "dugmeNazad";
+			this.dugmeNazad.Size = new System.Drawing.Size(72, 35);
+			this.dugmeNazad.TabIndex = 9;
+			this.dugmeNazad.Text = "Nazad";
+			this.dugmeNazad.UseVisualStyleBackColor = false;
+			this.dugmeNazad.Click += new System.EventHandler(this.DugmeNazadClick);
 			// 
 			// Izvestaj
 			// 
@@ -219,6 +234,7 @@ namespace DiplomskiRad
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(984, 661);
+			this.Controls.Add(this.dugmeNazad);
 			this.Controls.Add(this.prihodDan);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.prihodMesec);

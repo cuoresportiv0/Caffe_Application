@@ -175,6 +175,11 @@ namespace DiplomskiRad
 			ukupanPrihodDan();
 			popuniGridDan();
 		}
+		void DugmeNazadClick(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+		
 		
 		
 		}

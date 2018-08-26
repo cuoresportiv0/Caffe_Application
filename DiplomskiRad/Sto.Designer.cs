@@ -138,11 +138,10 @@ namespace DiplomskiRad
 			// printDialog1
 			// 
 			this.printDialog1.UseEXDialog = true;
-			//
-  			// printDocument1
-  			// 
-  			this.printDocument1.PrintPage += new System.Drawing.Printing.
-	      	PrintPageEventHandler(this.printDocument1_PrintPage);
+			// 
+			// printDocument1
+			// 
+			this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
 			// 
 			// Sto
 			// 
