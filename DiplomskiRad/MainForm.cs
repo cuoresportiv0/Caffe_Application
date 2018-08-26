@@ -40,6 +40,11 @@ namespace DiplomskiRad{
 			Lokal lokal = new Lokal();
 			lokal.ShowDialog();
 		}
+		void DugmeIzvestajiClick(object sender, EventArgs e)
+		{
+			Izvestaj izvestaj = new Izvestaj();
+			izvestaj.ShowDialog();
+		}
 	}
 
 }

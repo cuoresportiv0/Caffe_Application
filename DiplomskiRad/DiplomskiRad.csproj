@@ -53,6 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Izvestaji.cs" />
+    <Compile Include="Izvestaji.Designer.cs">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lokal.cs" />
     <Compile Include="Lokal.Designer.cs">
       <DependentUpon>Lokal.cs</DependentUpon>
@@ -77,6 +81,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Izvestaj.resx">
+      <DependentUpon>Izvestaji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lokal.resx">
       <DependentUpon>Lokal.cs</DependentUpon>
     </EmbeddedResource>

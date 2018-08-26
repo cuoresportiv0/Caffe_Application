@@ -11,3 +11,4 @@ C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Deb
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Magacin.resources
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Lokal.resources
 C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Sto.resources
+C:\Users\Filip\Documents\SharpDevelop Projects\DiplomskiRad\DiplomskiRad\obj\Debug\DiplomskiRad.Izvestaj.resources

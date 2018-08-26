@@ -16,6 +16,7 @@ namespace DiplomskiRad
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Button lokaldugme;
 		private System.Windows.Forms.Button magacindugme;
+		private System.Windows.Forms.Button dugmeIzvestaji;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -41,6 +42,7 @@ namespace DiplomskiRad
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.lokaldugme = new System.Windows.Forms.Button();
 			this.magacindugme = new System.Windows.Forms.Button();
+			this.dugmeIzvestaji = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lokaldugme
@@ -71,12 +73,27 @@ namespace DiplomskiRad
 			this.magacindugme.UseVisualStyleBackColor = false;
 			this.magacindugme.Click += new System.EventHandler(this.MagacindugmeClick);
 			// 
+			// dugmeIzvestaji
+			// 
+			this.dugmeIzvestaji.BackColor = System.Drawing.Color.White;
+			this.dugmeIzvestaji.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.dugmeIzvestaji.Font = new System.Drawing.Font("Elephant", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.dugmeIzvestaji.ForeColor = System.Drawing.Color.Peru;
+			this.dugmeIzvestaji.Location = new System.Drawing.Point(283, 324);
+			this.dugmeIzvestaji.Name = "dugmeIzvestaji";
+			this.dugmeIzvestaji.Size = new System.Drawing.Size(218, 54);
+			this.dugmeIzvestaji.TabIndex = 2;
+			this.dugmeIzvestaji.Text = "Izvestaji";
+			this.dugmeIzvestaji.UseVisualStyleBackColor = false;
+			this.dugmeIzvestaji.Click += new System.EventHandler(this.DugmeIzvestajiClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(784, 561);
+			this.Controls.Add(this.dugmeIzvestaji);
 			this.Controls.Add(this.magacindugme);
 			this.Controls.Add(this.lokaldugme);
 			this.Name = "MainForm";

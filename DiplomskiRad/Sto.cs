@@ -20,6 +20,7 @@ namespace DiplomskiRad
 	/// </summary>
 	public partial class Sto : Form
 	{
+		//public List <int> piceID;
 		public SQLiteConnection konekcija;
 		public int total=0;
 		public string vreme;
@@ -31,6 +32,7 @@ namespace DiplomskiRad
 			InitializeComponent();
 			setKonekcija();
 			ucitajDostupnaPica();
+			Racun.Items.Clear();
 			Racun.Items.Add("        "+DateTime.Now);
 			Racun.Items.Add(System.Environment.NewLine);
 			
@@ -108,6 +110,7 @@ namespace DiplomskiRad
 					while(r.Read()){
 						int cenaIzabranogPica=r.GetInt32(0);
 						total+=cenaIzabranogPica;
+						//piceID dodaj id u listu ID
 						Racun.Items.Add(spisakPica.Text+"      "+cenaIzabranogPica+" dinara");
 						spisakPica.ResetText();
 				}
@@ -137,7 +140,7 @@ namespace DiplomskiRad
 			int godina=DateTime.Today.Year;
 		
 			vreme=DateTime.Now.ToShortTimeString();
-			
+			//loop kroz listu i dodajes jedan po jedan(vreme,dan,mesec,godina,id)
 			using(SQLiteCommand izvrsi= konekcija.CreateCommand()){
 				izvrsi.CommandText=@"INSERT INTO racuni(vreme,dan,mesec,godina,total) values('"+vreme+"',"+dan+","+mesec+","+godina+","+total+")";
 			 		izvrsi.ExecuteNonQuery();}
@@ -168,6 +171,9 @@ namespace DiplomskiRad
 				
 			total=0;
 			Racun.Items.Clear();
+			Racun.Items.Add("        "+DateTime.Now);
+			Racun.Items.Add(System.Environment.NewLine);
+			
 		}
 		void DugmeNazadClick(object sender, EventArgs e)
 		{
