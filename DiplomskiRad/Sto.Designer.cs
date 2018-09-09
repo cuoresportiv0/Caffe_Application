@@ -59,6 +59,7 @@ namespace DiplomskiRad
 			// 
 			// labelSto
 			// 
+			this.labelSto.BackColor = System.Drawing.Color.White;
 			this.labelSto.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.labelSto.ForeColor = System.Drawing.Color.DarkOrange;
 			this.labelSto.Location = new System.Drawing.Point(34, 28);
@@ -69,6 +70,7 @@ namespace DiplomskiRad
 			// 
 			// spisakPica
 			// 
+			this.spisakPica.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 			this.spisakPica.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.spisakPica.ForeColor = System.Drawing.Color.DarkOrange;
 			this.spisakPica.FormattingEnabled = true;
@@ -79,6 +81,7 @@ namespace DiplomskiRad
 			// 
 			// dugmeIsporuci
 			// 
+			this.dugmeIsporuci.BackColor = System.Drawing.SystemColors.Control;
 			this.dugmeIsporuci.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.dugmeIsporuci.ForeColor = System.Drawing.Color.DarkOrange;
 			this.dugmeIsporuci.Location = new System.Drawing.Point(71, 143);
@@ -86,11 +89,12 @@ namespace DiplomskiRad
 			this.dugmeIsporuci.Size = new System.Drawing.Size(110, 39);
 			this.dugmeIsporuci.TabIndex = 2;
 			this.dugmeIsporuci.Text = "Isporuka";
-			this.dugmeIsporuci.UseVisualStyleBackColor = true;
+			this.dugmeIsporuci.UseVisualStyleBackColor = false;
 			this.dugmeIsporuci.Click += new System.EventHandler(this.DugmeIsporuciClick);
 			// 
 			// labelZaduzenje
 			// 
+			this.labelZaduzenje.BackColor = System.Drawing.Color.White;
 			this.labelZaduzenje.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.labelZaduzenje.ForeColor = System.Drawing.Color.DarkOrange;
 			this.labelZaduzenje.Location = new System.Drawing.Point(626, 29);

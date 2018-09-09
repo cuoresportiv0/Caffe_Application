@@ -142,7 +142,9 @@ namespace DiplomskiRad
 			 		}
 			 		
 			 	}
-			 MessageBox.Show("Uspesno izvrsena izmena!" ,"", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			 if(textBox1.Text!="" || textBox2.Text!=""){
+			 MessageBox.Show("Uspesno izvrsena izmena!" ,"", MessageBoxButtons.OK, MessageBoxIcon.Information);}
+			 
 			 textBox1.Clear();
 			 textBox2.Clear();
 			 izborArtikla.ResetText();
@@ -191,7 +193,7 @@ namespace DiplomskiRad
 			 		
 		}
 			else{
-				MessageBox.Show("Morate uneti podatke za cenu i broj artikala!","",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				MessageBox.Show("Morate uneti podatke za naziv , cenu i broj artikala!","",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			
 		}

@@ -14,8 +14,6 @@ namespace DiplomskiRad
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.Label labelRadnik;
-		private System.Windows.Forms.ComboBox spisakRadnika;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button stoPrvi;
 		private System.Windows.Forms.Button stoCetvrti;
@@ -26,6 +24,7 @@ namespace DiplomskiRad
 		private System.Windows.Forms.Button stoTreci;
 		private System.Windows.Forms.Button stoOsmi;
 		private System.Windows.Forms.Button dugmeNazad;
+		private System.Windows.Forms.Label datum;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -49,8 +48,6 @@ namespace DiplomskiRad
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lokal));
-			this.labelRadnik = new System.Windows.Forms.Label();
-			this.spisakRadnika = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.stoPrvi = new System.Windows.Forms.Button();
 			this.stoCetvrti = new System.Windows.Forms.Button();
@@ -61,28 +58,8 @@ namespace DiplomskiRad
 			this.stoTreci = new System.Windows.Forms.Button();
 			this.stoOsmi = new System.Windows.Forms.Button();
 			this.dugmeNazad = new System.Windows.Forms.Button();
+			this.datum = new System.Windows.Forms.Label();
 			this.SuspendLayout();
-			// 
-			// labelRadnik
-			// 
-			this.labelRadnik.BackColor = System.Drawing.Color.White;
-			this.labelRadnik.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelRadnik.ForeColor = System.Drawing.Color.DarkOrange;
-			this.labelRadnik.Location = new System.Drawing.Point(48, 24);
-			this.labelRadnik.Name = "labelRadnik";
-			this.labelRadnik.Size = new System.Drawing.Size(107, 27);
-			this.labelRadnik.TabIndex = 0;
-			this.labelRadnik.Text = "Radnik:";
-			// 
-			// spisakRadnika
-			// 
-			this.spisakRadnika.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.spisakRadnika.ForeColor = System.Drawing.Color.DarkOrange;
-			this.spisakRadnika.FormattingEnabled = true;
-			this.spisakRadnika.Location = new System.Drawing.Point(48, 63);
-			this.spisakRadnika.Name = "spisakRadnika";
-			this.spisakRadnika.Size = new System.Drawing.Size(142, 26);
-			this.spisakRadnika.TabIndex = 1;
 			// 
 			// label1
 			// 
@@ -211,6 +188,17 @@ namespace DiplomskiRad
 			this.dugmeNazad.UseVisualStyleBackColor = true;
 			this.dugmeNazad.Click += new System.EventHandler(this.DugmeNazadClick);
 			// 
+			// datum
+			// 
+			this.datum.BackColor = System.Drawing.Color.Transparent;
+			this.datum.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.datum.ForeColor = System.Drawing.Color.White;
+			this.datum.Location = new System.Drawing.Point(37, 9);
+			this.datum.Name = "datum";
+			this.datum.Size = new System.Drawing.Size(343, 69);
+			this.datum.TabIndex = 12;
+			this.datum.Text = "label2";
+			// 
 			// Lokal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +206,7 @@ namespace DiplomskiRad
 			this.BackColor = System.Drawing.Color.DimGray;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.ClientSize = new System.Drawing.Size(984, 661);
+			this.Controls.Add(this.datum);
 			this.Controls.Add(this.dugmeNazad);
 			this.Controls.Add(this.stoOsmi);
 			this.Controls.Add(this.stoTreci);
@@ -228,8 +217,6 @@ namespace DiplomskiRad
 			this.Controls.Add(this.stoCetvrti);
 			this.Controls.Add(this.stoPrvi);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.spisakRadnika);
-			this.Controls.Add(this.labelRadnik);
 			this.Name = "Lokal";
 			this.Text = "Lokal";
 			this.Load += new System.EventHandler(this.LokalLoad);

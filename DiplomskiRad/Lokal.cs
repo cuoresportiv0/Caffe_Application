@@ -25,22 +25,21 @@ namespace DiplomskiRad
 			
 			InitializeComponent();
 			setKonekcija();
-			ispisiRadnike();
+			ispisiDatum();
 			
 			
+			
 		}
 		
-		public void ispisiRadnike(){
-			using(SQLiteCommand komanda = konekcija.CreateCommand()){
-					komanda.CommandText = @"SELECT ime_prezime From radnici";
-					SQLiteDataReader r = komanda.ExecuteReader();
-					while(r.Read()){
-						spisakRadnika.Items.Add(r.GetValue(0) + "");
-		
-		
+		void ispisiDatum(){
+			object date;
+			date=DateTime.Today;
+			datum.Text=date.ToString();
+			
+			
+			
 		}
-			}
-		}
+		
 		
 		void setKonekcija(){
 			konekcija = new SQLiteConnection("Data Source=baza.db;Version=3");

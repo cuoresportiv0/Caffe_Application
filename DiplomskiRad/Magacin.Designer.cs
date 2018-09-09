@@ -293,6 +293,7 @@ namespace DiplomskiRad
 			// 
 			// izborArtikla
 			// 
+			this.izborArtikla.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
 			this.izborArtikla.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.izborArtikla.ForeColor = System.Drawing.Color.Peru;
 			this.izborArtikla.FormattingEnabled = true;
