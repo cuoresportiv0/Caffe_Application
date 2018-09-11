@@ -114,7 +114,7 @@ namespace DiplomskiRad
 			if(!Char.IsDigit(ch) && ch != 8)
 			{
 				e.Handled=true;
-				MessageBox.Show("Unesite broj!" ,"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Unesite cenu!" ,"", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		void UnesiIzmeneClick(object sender, EventArgs e)
